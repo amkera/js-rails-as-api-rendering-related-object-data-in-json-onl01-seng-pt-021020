@@ -9,4 +9,5 @@ class SightingsController < ApplicationController
     render json: sightings, include: [:bird, :location]
   end 
  
+ #same as: render json: sightings.to_json(include: [:bird, :location])
 end
